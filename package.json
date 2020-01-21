@@ -1,0 +1,15 @@
+{
+  "name": "drag-to-download",
+  "version": "0.1.0",
+  "private": true,
+  "repository": "https://github.com/JosephusPaye/drag-to-download.git",
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c --compact",
+    "format": "prettier --write src/**/*.js"
+  },
+  "devDependencies": {
+    "prettier": "1.19.1",
+    "rollup": "^1.29.0"
+  }
+}
