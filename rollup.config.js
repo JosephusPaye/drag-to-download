@@ -1,4 +1,5 @@
 const resolve = require('@rollup/plugin-node-resolve');
+const { terser } = require('rollup-plugin-terser');
 
 module.exports = [
   {
@@ -7,7 +8,7 @@ module.exports = [
       file: 'dist/content-script.js',
       format: 'iife',
     },
-    plugins: [resolve()],
+    plugins: [resolve(), terser()],
     context: 'window',
   },
   {
@@ -16,7 +17,7 @@ module.exports = [
       file: 'dist/background.js',
       format: 'iife',
     },
-    plugins: [resolve()],
+    plugins: [resolve(), terser()],
     context: 'window',
   },
 ];
