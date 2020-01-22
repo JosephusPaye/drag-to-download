@@ -1,8 +1,6 @@
 // @ts-check
 import { log } from './log';
 
-log('oh hai');
-
 const toAbsoluteUrl = (function() {
   let anchor;
 
