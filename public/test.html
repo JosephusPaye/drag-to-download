@@ -30,16 +30,29 @@
   <body>
     <div>
       <img src="test.jpg" alt="Painting of bulls fighting?" />
-      <a href="test.jpg" data-downloadurl="image/jpeg:test.jpg:http://127.0.0.1:8080/test.jpg">Drag to download</a>
+      <a href="test.jpg" data-downloadurl="::http://127.0.0.1:8080/test.jpg"
+        >Drag to download</a
+      >
     </div>
-    <script>
-        const links = Array.from(document.querySelectorAll('a'));
-        links.forEach(link => {
-            link.addEventListener('dragstart', function (e) {
-                console.log('Setting data transfer object', e.currentTarget, e.currentTarget.dataset.downloadurl);
-                e.dataTransfer.setData('DownloadURL', e.currentTarget.dataset.downloadurl);
-            }, false);
-        });
-	</script>
+    <!-- <script>
+      const links = Array.from(document.querySelectorAll('a'));
+      links.forEach(link => {
+        link.addEventListener(
+          'dragstart',
+          function(e) {
+            console.log(
+              'Setting data transfer object',
+              e.currentTarget,
+              e.currentTarget.dataset.downloadurl
+            );
+            e.dataTransfer.setData(
+              'DownloadURL',
+              e.currentTarget.dataset.downloadurl
+            );
+          },
+          false
+        );
+      });
+    </script> -->
   </body>
 </html>

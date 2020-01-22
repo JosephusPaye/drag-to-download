@@ -4,11 +4,13 @@
   "private": true,
   "repository": "https://github.com/JosephusPaye/drag-to-download.git",
   "scripts": {
-    "dev": "rollup -c --watch",
-    "build": "rollup -c --compact",
-    "format": "prettier --write src/**/*.js"
+    "dev": "npm run copy-assets && rollup -c --watch",
+    "build": "npm run copy-assets && rollup -c --compact",
+    "format": "prettier --write src/**/*.js public/**/*.json public/**/*.html",
+    "copy-assets": "rm -rf dist && mkdirp dist && cp public/* dist"
   },
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "prettier": "1.19.1",
     "rollup": "^1.29.0"
   }
