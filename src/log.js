@@ -1,5 +1,5 @@
 // @ts-check
-const enableLogging = true;
+const enableLogging = false;
 
 /**
  * Log the given values if logging is enabled.
