@@ -8,7 +8,7 @@
 
 ### Install and setup
 
-- Install the extension.
+- Install the extension: <https://chrome.google.com/webstore/detail/drag-to-download/nlbdfajoolkacbicncknldfoikncjdhb>.
 - Visit each domain you want to enable the extension on, click the extension icon in the browser toolbar, then click **Enable Drag to download on this domain**.
 - The browser will prompt you to give the extension permission to access the domain and reload the page. After you accept and reload, you should be able to drag and drop links to download.
 
